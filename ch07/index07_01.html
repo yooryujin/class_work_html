@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 연습하기</title>
+
+    <!-- 내부 스타일 시트 -->
+    <style>
+    /* 선택자 -> 태그 선택자 */
+    p {
+        color: yellow;
+    }
+
+    /* 선택자 -> 아이디 선택자 : id가 temp-01 요소에 스타일을 적용(# -> 아이디를 의미한다) */
+
+    #temp-01 {
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* 선택자 -> 클래스 선택자 : class="temp-02"인 요소들을 선택한다  */
+    .temp-02 {
+        color: gold;
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS 선택자란</h2>
+    <p id="temp">여기는 첫번째 p태그야</p>
+    <p id="temp-01">여기는 두번째 p태그야</p>
+    <p class="temp-02">여기는 세번째 p태그야</p>
+    <p class="temp-02">여기는 네번째 p태그야</p>
+    
+    
+</body>
+</html>

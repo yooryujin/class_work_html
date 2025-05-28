@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table colspan & rowspan</title>
+    <!-- 내부 스타일 시트 -->
+     <style>
+        * {
+            text-align: center;
+        }
+        table {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+     </style>
+</head>
+<body>
+    <h2>시간표 예제</h2>
+    <table border="2">
+        <thead>
+            <th>시간</th>
+            <th>월요일</th>
+            <th>화요일</th>
+            <th>수요일</th>
+            <th>목요일</th>
+            <th>금요일</th>
+            <th>토요일</th>
+            <th>일요일</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <!-- colspan : 열 2개를 합침 -->
+                <td colspan="2">강사님 연대기</td>
+                <td rowspan="3" colspan="3">공강</td>
+                <td rowspan="4" colspan="4">휴식</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>레전드 또또 소불고기 먹방</td>
+                <td rowspan="2">이동 수업</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>합천 돼지국밥 탐방</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>

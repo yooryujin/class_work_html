@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 속성에 대해 알아보자</title>
+
+    <!-- 내부 스타일 시트 선언 -->
+    <style>
+        /* css 주석 */
+        .info-text {
+            color: antiquewhite;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 각 태그의 속성이란 것들을 설정할 수 있다. -->
+    <!-- 1. id 속성: 요소를 고유하게 식별할 수 있는 속성이다. -->
+    <h1 id="main-title" style="color:red;">테런금지!!!!!!!!!!!!!!</h1>
+    <h2 id="main-title2">id 속성 확인(렌더링되는 페이지에 같은 id 값을 할당 해서는 안된다)</h2>
+
+    <!-- 2. class 속성 : 여러 요소에 공통된 값을 지정할 수 있다.  -->
+    <p class="info-text">이것은 첫번째 문단 입니다.</p>
+    <p class="info-text">이것은 두번째 문단 입니다.</p>
+    
+    <!-- 3. src와 alt 속성 : 경로(이미지 태그 경로 - alt 대체 속성 ) -->
+     <img src="../ch02/img/sample.jpg" alt="배경이미지">
+    
+    <!-- 4. href 속성 : 링크 연결 -->
+      <a href="http://www.naver.com/" target = "_blanck" >네이버 사이트로 이동하기</a>
+    
+    <!-- 5. style 속성 : 인라인 형식으로 css 스타일 적용 -->
+    <div style="color:blue;font-size: 22px;" >스타일 속성 테스트</div>
+
+    <!-- 6. data- 속성 : 사용자 정의 데이터 저장 -->
+    <button data-my="asd1234" ondblclick="alert('클릭됨')">버튼</button>
+
+</body>
+</html>
