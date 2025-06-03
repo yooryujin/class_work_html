@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: seashell;
+            height: 100vh;
+        }
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: rgb(233, 195, 185);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box2 {
+            /* 단축 속성 */
+            /* flex : 2; */
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="box1">1</div>
+            <div class="box1 box2">2</div>
+            <div class="box1">3</div>
+        </div>
+        <div class="inner b2">
+            <div class="box1">4</div>
+            <div class="box1 box2">5</div>
+            <div class="box1">6</div>
+        </div>
+        <div class="inner b3">
+            <div class="box1">7</div>
+            <div class="box1 box2">8</div>
+            <div class="box1">9</div>
+        </div>
+    </div>
+</body>
+
+</html>

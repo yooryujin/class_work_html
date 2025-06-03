@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex-flow 속성을 사용해보자*/
+        .container {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+
+
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(235, 218, 235);
+            margin: 5px;
+            border: 2px solid black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* flex-grow 속성이 뭘까? */
+        .item1 {
+            flex-grow: 1;
+        }
+        .item2 {
+            flex-grow: 2;
+        }
+        .item3 {
+            flex-grow: 3;
+        }
+        /* flex-grow 속성은 값의 비율에 따라 남는 공간을 나눕니다.*/
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>

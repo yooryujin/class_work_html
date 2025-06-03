@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 연습 예제</title>
+    <style>
+        /* input 태그의 속성중 type="text" 인 요소를 선택해 */
+        input[type="text"] {
+            border: 1px solid gray;
+            padding: 5px;
+            width: 300px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+        }
+        p[class~=highlight] {
+            background-color: yellow;
+            padding: 5px;
+        }
+        [data-type] {
+            border: 2px dashed green;
+            margin: 10px;
+            padding: 10px;
+        }
+        /* 속성 data-role 가지고 있는 요소중에 값 editor 포함 선택자 만들어 보자 */
+        [data-role~="editor"] {
+            border: 5px solid seashell;
+            margin: 50px;
+            font-size: 40px;
+            color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="텍스트 입력">
+    <input type="submit" value="제출">
+    <p class="content highlight main">강조된 문단입니다</p>
+    <div data-type="card">카드 형태의 컨텐츠 입니다</div>
+    <span data-role="viewer editor">편집자 역할은 뭘까</span>
+    
+
+    
+</body>
+</html>
