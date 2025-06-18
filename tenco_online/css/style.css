@@ -5,7 +5,7 @@
 
 /* a 링크 태그 스타일 초기화 */
 
-/* a 태그의 모든 요소를 초기화 한다 */
+/* a 태그에 모든 요소를 초기화 한다. */
 a {
     all: unset;
 }
@@ -22,19 +22,20 @@ a:visited {
 
 a:active {
     text-decoration: none;
-    color: #3f364d;
+    color: #3f464d;
 }
+
 a:hover {
     text-decoration: none;
-    color: #3f364d;
+    color: #3f464d;
 }
 
 .inner {
-    /*  가로 사이즈가 1200px 넘는 해상도에서는 미디어 쿼리 max-width 설정을 할 예정 */
+    /* 가로 사이즈가 1200px 넘는 해상도에서는 미디어 쿼리 max-width 설정을 할 예정 */
     width: 100%;
-    /* align-item 등으로 수직 가운데 정렬을 위해 미리 height 크기를 설정한다 */
+    /* align-items 등으로 수직 가운데 정렬을 위해 미리 height 크기를 설정한다  */
     height: 100%;
-    /* 가운데 정렬을 하기 위해 설정 */
+    /* 가운데 정렬 */
     margin: 0 auto;
     /* 좌우 padding 값을 주어 좌우에 딱 붙지 않도록 설정 하기 위함 */
     padding: 0 2rem;
@@ -52,22 +53,226 @@ header {
     z-index: 1000;
 }
 
-.head-container {
+.head--container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/* 자손선택자(공백 중요!) head--container 안에 있는 모든 태그들 중에 class 값 .
-head--brand 선택 바로 밑에 자식 뿐만 아니라 더 깊은 자손도 포함이 된다. */
-.head-container .head--brand {
+
+/* 자손선택자(공백 중요!) head--container 안에 있는 모든 태그들 
+*  중에 class 값 .head--brand 선택  바로 밑에 자식 뿐만 아니라 더 깊은 자손도 포함이 된다.
+*/
+.head--container .head--brand {
     font-weight: bold;
     /* 16px * 1.2 = 19.2px */
     font-size: 1.2rem;
 }
 
-.head-container .head--brand a:hover {
+.head--container .head--brand a:hover {
     color: #2186c3;
     cursor: pointer;
 }
+
+section {
+    width: 100%;
+    background-color: #fff;
+}
+
+.main {
+    height: 360px;
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png);
+    background-repeat: no-repeat;
+    /* x축, y축 */
+    background-position: center 20%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.main--container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 40, 80);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.title--container {
+    margin-top: 100px;
+}
+
+.title {
+    
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.skill--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 상하, 좌우 */
+    padding: 1rem 0;
+    /* flex-wrap 일 대 다음줄로 넘어 갔을 경우 여백 */
+    gap: 10px;
+}
+
+.skill {
+    width: 22%;
+    height: 100%;
+    background-color:#fff;
+    display: flex;
+    border: 1px solid rgb(212, 211, 211);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    /* x, y, bluer-radius 색상*/
+    box-shadow: 10px 5px 5px rgba(25, 42, 70, 0.3);
+    min-width: 200px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translate(0, -3px);
+}
+
+
+.skill--icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #2186c3;
+}
+
+.skill--title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill--name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    color: #545e6f;
+}
+
+.skill--usage {
+    font-size: 0.8rem;
+    color: #545e6f;
+}
+
+
+.roadmap--container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.roadmap--title--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roadmap--title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+}
+
+.slide--prev {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+}
+
+
+.slide--next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #515455;
+}
+
+/* ul 태그 스타일 초기화  */
+ul {
+    list-style: none;
+}
+
+/* --------  */
+/* 직접 만들어 보기  */
+/* -------- */
+/* ul 태그 */
+.class--list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+/* li 태그 */
+.class--card {
+    width: 240px;
+    /* box-shadow: 블럭에 그림자를 적용하는 CSS 기능
+     https://developer.mozilla.org/ko/docs/Web/CSS/box-shadow 
+     offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius: 8px;
+    margin: 0 10px;
+    /* border: 1px solid gray; */
+}
+
+.class--image {
+  /* 사이즈가 큰 이미지를 작은 블럭 내에 넣을 때 호환성을 위해 max-width/max-height 를 사용해야 함 */
+  max-width: 240px;
+  /* border-radius: 블럭 모서리를 둥글게 하는 CSS 기능
+     top-left | top-right | bottom-right | bottom-left */
+  border-radius: 8px 8px 0 0;
+}
+
+.class--container {
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class--skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.class--format {
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #0d47a1;
+  padding: 0.2rem;
+}
+
+.class--desc {
+  font-size: 0.8rem;
+  width: 100%;
+  margin-top: 1rem;
+  color: #545e6f;
+  padding: 0.2rem;
+}
+
+/* 미디어 쿼리 사용 */
+@media (min-width: 1200px) {
+    /* 화면에 크기가 최소 1200px 커야 한다. */
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+

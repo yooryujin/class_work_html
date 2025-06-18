@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    all: unset;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.head--container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head--inner {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head--left {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.head--right {
+    font-weight: bold;
+    font-size: 0.7rem;
+    display: flex;
+    gap: 10px;
+}
+
+.head--right a {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+section {
+    width: 100%;
+}
+
+.title--container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.skill--icon {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skill {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.skill input {
+    border: 0;
+    padding: 0 0 7px 0;
+    text-indent: 20px;
+    width: 200px;
+    flex: 1;
+
+}
+
+.main--container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+.title--form--inner {
+    display: flex;
+
+}
+
+.class--image {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.title--form {
+    background-color: #fff;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+
+.title--header {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: 20px 0;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.title--user-info {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+}
+
+.title--main-calender {
+    display: flex;
+    gap: 10px;
+}
+
+.title--form--inner {
+    padding: 18px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+@media(min-width: 1200px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+.title--form-name {
+    font-weight: 400;
+}
+
+.title--job {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+
+.title--job label {
+    display: flex;
+    width: calc((100% - 30px) / 4);
+    gap: 10px;
+}
+
+.title--job {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.title--class {
+    margin: 20px 0;
+}
+
+.title--technology {
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.title--technology label {
+    width: calc((100% - 40px) / 5);
+    display: flex;
+    gap: 10px;
+}
+
+.title--history {
+    font-weight: 600;
+}
+
+.title--history-inner {
+    padding-left: 10px;
+
+}
+
+.title--history-inner :first-child {
+    padding-right: 10px;
+}
+
+.history--radio-inner {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.history--radio-label {
+    padding-right: 15px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.button-container {
+    text-align: right;
+    padding-top: 80px;
+}
+
+.save-button {
+    background-color: #5a6ee1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #4a5ed1;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 20px 0;
+    background-color: #f2f4f5;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
